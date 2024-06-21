@@ -50,7 +50,7 @@ export default function Home() {
 
               {/* <div id="profiles"> */}
 
-                <div className='personal' id="joseph">
+                {/* <div className='personal' id="joseph">
                   <div className='personal__info'>
                     <div className='personal__info__profil__picture'>
                       <Image src={'/assets/img/joseph.png'} width={76} height={76} alt='' />
@@ -186,7 +186,7 @@ export default function Home() {
                     </div>
 
                   </div>
-                </div>
+                </div> */}
 
               {/* </div> */}
 
