@@ -9,7 +9,12 @@
     margin-right: 0px !important;
 }
 
-.nav-link {
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.nav-link,
+.dropdown-item {
     padding: 15px 28px !important;
     color: black !important;
     font-size: 12px;
@@ -66,4 +71,26 @@
     height: 99px;
     background: #151524;
     border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+
+    .navbar .shape-golden {
+        display: none;
+    }
+
+    #navbar .nav-item-bg-golden,
+    #navbar .navbar-nav-bg-golden,
+    #navbar .dropdown-menu {
+        background-color: var(--dark-blue);
+    }
+
+    #navbar .nav-link,
+    #navbar .dropdown-item {
+        color: white !important;
+    }
+
+    #navbar .navbar-nav {
+        display: block !important;
+    }
 }

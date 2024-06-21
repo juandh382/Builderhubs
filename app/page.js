@@ -35,10 +35,10 @@ export default function Home() {
 
       <section id="we-make-your-life-easy" className="bg-primary-blue ">
 
-        <div className="container position-relative">
+        <div className="container position-relative" >
 
           <div className="row">
-            <div className="col-md-6 pt-4">
+            <div className="col-lg-6 pt-4">
               <h2>
                 Construction business owner, we make <span className="text-red">your life easy...</span>
               </h2>
@@ -46,152 +46,157 @@ export default function Home() {
               <a className="btn btn-primary mx-2">Book a meeting</a>
               <a className="btn btn-outline mx-2">Start a free trial</a>
             </div>
-            <div className="col-md-6 position-relative">
+            <div className="col-lg-6 position-relative" id="maria">
 
+              {/* <div id="profiles"> */}
 
-              <div className='personal' id="joseph">
-                <div className='personal__info'>
-                  <div className='personal__info__profil__picture'>
-                    <Image src={'/assets/img/joseph.png'} width={76} height={76} alt='' />
+                <div className='personal' id="joseph">
+                  <div className='personal__info'>
+                    <div className='personal__info__profil__picture'>
+                      <Image src={'/assets/img/joseph.png'} width={76} height={76} alt='' />
+                    </div>
+
+                    <h4>Joseph V.</h4>
+                    <p>Bid Management Hub</p>
                   </div>
 
-                  <h4>Joseph V.</h4>
-                  <p>Bid Management Hub</p>
+                  <p className='personal__info__benefits'><small>Benefits</small></p>
+                  <div className='row'>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/calendar.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/clock.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/project.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/file.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+
+                  </div>
+                </div>
+                <div className='personal personal--small' id="joseph-small">
+                  <div className='personal__info'>
+                    <h4>Joseph V.</h4>
+                    <p>Bid Management Hub</p>
+                  </div>
+
+                  <p className='personal__info__benefits'><small>Benefits</small></p>
+                  <div className='row'>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/calendar.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/clock.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/project.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/file.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+
+                  </div>
+                </div>
+                <div className='personal' id="alex">
+                  <div className='personal__info'>
+                    <div className='personal__info__profil__picture'>
+                      <Image src={'/assets/img/alex.png'} width={76} height={76} alt='' />
+                    </div>
+
+                    <h4>Alex S.</h4>
+                    <p>Services Hub</p>
+                  </div>
+
+                  <p className='personal__info__benefits'><small>Benefits</small></p>
+                  <div className='row'>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/calendar.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/clock.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/project.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+                    <div className='col-3 personal__img__container'>
+                      <Image
+                        src={'/assets/img/file.png'}
+                        width={20}
+                        height={20}
+                        alt=''
+                      />
+                    </div>
+
+                  </div>
                 </div>
 
-                <p className='personal__info__benefits'><small>Benefits</small></p>
-                <div className='row'>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/calendar.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/clock.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/project.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/file.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-
-                </div>
-              </div>
-              <div className='personal personal--small' id="joseph-small">
-                <div className='personal__info'>
-                  <h4>Joseph V.</h4>
-                  <p>Bid Management Hub</p>
-                </div>
-
-                <p className='personal__info__benefits'><small>Benefits</small></p>
-                <div className='row'>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/calendar.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/clock.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/project.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/file.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-
-                </div>
-              </div>
-              <div className='personal' id="alex">
-                <div className='personal__info'>
-                  <div className='personal__info__profil__picture'>
-                    <Image src={'/assets/img/alex.png'} width={76} height={76} alt='' />
-                  </div>
-
-                  <h4>Alex S.</h4>
-                  <p>Services Hub</p>
-                </div>
-
-                <p className='personal__info__benefits'><small>Benefits</small></p>
-                <div className='row'>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/calendar.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/clock.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/project.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-                  <div className='col-3 personal__img__container'>
-                    <Image
-                      src={'/assets/img/file.png'}
-                      width={20}
-                      height={20}
-                      alt=''
-                    />
-                  </div>
-
-                </div>
-              </div>
+              {/* </div> */}
 
               <Image
                 src={'/assets/img/computer-turned-on.png'}
                 width={1013}
                 height={617}
                 alt=""
+
+                id="computer-1"
               />
             </div>
           </div>
@@ -280,7 +285,7 @@ export default function Home() {
               <h2>CRM <strong>Hub</strong></h2>
               <p>Revolutionize your bidding process with our accurate quantity takeoff and estimating services. Our cost-effective solutions help you bid smarter, offering a competitive edge in securing more projects while maximizing profitability.</p>
               <div className="row">
-                <div className="col-1">
+                <div className="col-2 col-md-1">
                   <Image src={'/assets/img/vector-5.png'} width={21} height={21} alt="" />
                 </div>
                 <div className="col-9">
@@ -289,7 +294,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-1">
+                <div className="col-2 col-md-1">
                   <Image src={'/assets/img/vector-7.png'} width={21} height={21} alt="" />
                 </div>
                 <div className="col-9">
@@ -383,17 +388,20 @@ export default function Home() {
             </div>
             <div className="col-md-8">
               <p><strong>BidConnect simplifies the pre-bid management process for construction professionals. Seamlessly connect with the construction network, access vital project details, and secure valuable opportunities, all within one user-friendly platform.</strong></p>
+
               <div className="row justify-content-end">
-                <div className="col-4 align-right">
+                <div className="col-2 col-md-4 align-right">
                   <Image src={'/assets/img/vector-3.png'} width={45} height={45} alt="" />
                 </div>
-                <div className="col-8 text-secondary-violet">
+                <div className="col text-secondary-violet">
                   <p>With BidConnect, stay ahead of the competition by efficiently managing pre-bid tasks and connecting with potential collaborators in the construction industry.</p>
                 </div>
-                <div className="col-4 align-right">
+              </div>
+              <div className="row justify-content-end">
+                <div className="col-2 col-md-4 align-right">
                   <Image src={'/assets/img/vector-4.png'} width={45} height={40} alt="" />
                 </div>
-                <div className="col-8 text-secondary-violet">
+                <div className="col text-secondary-violet">
                   <p>With BidConnect, stay ahead of the competition by efficiently managing pre-bid tasks and connecting with potential collaborators in the construction industry.</p>
                 </div>
               </div>
@@ -430,11 +438,12 @@ export default function Home() {
             width={814}
             height={930}
             alt=""
+            id="phones-your-life-easy"
           />
 
           <div className="your-life-easy-button-container">
-            <a className="btn btn-primary mx-2">Book a meeting</a>
-            <a className="btn btn-outline mx-2">Start free trial</a>
+            <a className="btn btn-primary m-2">Book a meeting</a>
+            <a className="btn btn-outline m-2">Start free trial</a>
           </div>
         </div>
 
@@ -554,7 +563,7 @@ export default function Home() {
             <div className="col-md-7">
               <p className="align-right">BidConnect simplifies the pre-bid management process for construction professionals</p>
               <div className="row">
-                <div className="col-1">
+                <div className="col-2 col-md-1">
                   <Image src={'/assets/img/vector-7.png'} alt="" width={27} height={27} />
                 </div>
                 <div className="col">
@@ -563,7 +572,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-1">
+                <div className="col-2 col-md-1">
                   <Image src={'/assets/img/vector-5.png'} alt="" width={27} height={27} />
                 </div>
                 <div className="col">
@@ -585,7 +594,7 @@ export default function Home() {
               <h2>Done for your services <strong>Hub</strong></h2>
               <p>Revolutionize your bidding process with our accurate quantity takeoff and estimating services. Our cost-effective solutions help you bid smarter, offering a competitive edge in securing more projects while maximizing profitability.</p>
               <div className="row">
-                <div className="col-1">
+                <div className="col-2 col-md-1">
                   <Image src={'/assets/img/vector-8.jpg'} alt="" width={40} height={40} />
                 </div>
                 <div className="col">
@@ -594,7 +603,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-1">
+                <div className="col-2 col-md-1">
                   <Image src={'/assets/img/vector-9.png'} alt="" width={21} height={21} />
                 </div>
                 <div className="col">
@@ -679,7 +688,7 @@ export default function Home() {
             <div className="col-md-6 position-relative">
               <div className="shadow"></div>
               <Image
-                src={'/assets/img/computer.png'}
+                src={'/assets/img/computer-turned-on.png'}
                 width={1013}
                 height={617}
                 alt=""

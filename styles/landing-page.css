@@ -82,6 +82,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    z-index: 2;
 }
 
 .personal__info {
@@ -102,7 +103,7 @@ section {
 
 #alex {
     bottom: 40px;
-    left: 80%;
+    right: 0;
 
 }
 
@@ -230,11 +231,11 @@ section {
 }
 
 #crm-hub {
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
 #your-life-easy {
-    padding-top: 0;
+    padding-top: 0 !important;
     text-align: center;
     padding-bottom: 200px;
 }
@@ -275,7 +276,7 @@ section {
 }
 
 #done-for-your-services-hub {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
 }
 
 #construction-management-hub h2 {
@@ -351,10 +352,276 @@ section {
     top: 0;
 }
 
+
 .shape-container {
     margin-bottom: 110px;
 }
 
 .shape-container img {
     width: 100%;
+}
+
+
+/* #profiles {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+} */
+
+@media (max-width: 992px) {
+
+    h2 {
+        font-size: 48px !important;
+    }
+
+    p {
+        font-size: 13px !important;
+        margin-bottom: 30px;
+    }
+
+    .bg-primary-blue a {
+        color: white;
+        font-size: 13px;
+    }
+
+    .shape-container img {
+        height: 73px;
+    }
+
+    .form {
+        margin-top: 40px !important;
+        margin-bottom: 40px;
+    }
+
+    .form h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 14px;
+
+    }
+
+    .form label {
+        font-size: 12px;
+    }
+
+    .form input {
+        padding: 11px 20px;
+    }
+
+    .form button {
+        font-size: 12px;
+        margin-top: 26px;
+    }
+
+    #your-life-easy p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    #phones-your-life-easy {
+        width: 100%;
+        height: auto;
+    }
+
+    .your-life-easy-button-container {
+        bottom: 0;
+    }
+
+    #computer-1 {
+        /* width: 100%;
+        position: relative;
+        z-index: 1;
+        right: -50px;
+        height: auto; */
+    }
+
+    #elevate-your-construction-business-today img {
+        margin-top: 40px;
+
+    }
+
+    #elevate-your-construction-business-today .shadow {
+        width: 41%;
+    }
+
+    #elevate-your-construction-business-today .btn {
+        margin-bottom: 15px;
+    }
+
+    .personal {
+        max-width: 188px;
+        max-height: 168px;
+    }
+
+    #joseph {
+        margin-top: 100px;
+        left: auto;
+    }
+
+    #joseph-small {
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px !important;
+        text-align: center !important;
+    }
+
+    section {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .personal {
+        margin-top: 100px;
+        width: 103px;
+        height: 106px;
+        padding: 10px 13px;
+    }
+
+    .personal__info p,
+    .personal__info__benefits {
+        font-size: 8px !important;
+        margin-bottom: 0;
+    }
+
+    .personal__info h4 {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .personal__info__profil__picture img {
+        width: 50%;
+        height: auto;
+    }
+
+    .personal__img__container {
+        padding: 3px;
+
+    }
+
+    .personal__img__container img {
+        width: 75%;
+        height: auto;
+    }
+
+    #maria {
+        min-height: 338px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+
+    #joseph,
+    #alex,
+    #joseph-small {
+        /* position: relative; */
+        /* animation: none; */
+        /* display: inline-flex; */
+        margin: 100px 20px 0;
+        /* left: auto; */
+        /* right: auto; */
+    }
+
+
+    #joseph {
+        margin-top: 100px;
+    }
+
+    .shape-container img {
+        height: 50px;
+    }
+
+    #computer-1 {
+
+        /* display: none; */
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        right: -150px;
+        height: auto;
+    }
+
+    #trusted-companies {
+        margin-top: 20px;
+    }
+
+    #elevate-your-construction-business-today {
+        text-align: center;
+    }
+
+    #elevate-your-construction-business-today img {
+        position: absolute;
+        right: -150px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .bg-primary-blue a,
+    #elevate-your-construction-business-today .btn {
+        color: white;
+        font-size: 9px;
+    }
+
+    #we-make-your-life-easy {
+        padding-top: 0 !important;
+    }
+
+
+    #we-make-your-life-easy.bg-primary-blue a {
+        color: white;
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+
+
+    #joseph,
+    #alex,
+    #joseph-small {
+        margin: 70px 20px 0;
+    }
+
+    .personal {
+        width: 93px;
+        min-height: 78px;
+        height: auto;
+    }
+
+    .personal__info {
+        top: -78px;
+    }
+
+    .personal__info h4 {
+        font-size: 9px;
+    }
+
+    .personal__info__profil__picture img {
+        width: 45%;
+    }
+
+    .personal__info p,
+    .personal__info__benefits {
+        font-size: 6px !important;
+    }
+
+    .personal__img__container img {
+        width: 65%;
+    }
+
+    #computer-1,
+    #elevate-your-construction-business-today img {
+        right: -100px;
+    }
 }

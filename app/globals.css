@@ -47,7 +47,7 @@ h2 {
 p {
   font-family: montserrat;
   font-size: 20px;
-  
+
 }
 
 strong {
@@ -178,4 +178,14 @@ strong {
 
 #footer .container-logo-footer {
   margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+
+  
+
+  .btn {
+    font-size: 13px;
+    padding: 7px 15px !important;
+  }
 }
