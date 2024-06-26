@@ -30,6 +30,36 @@ export default function Home() {
 
   }
 
+  const handleSubmit = async e => {
+    e.preventDefault();
+
+    const formData = new FormData()
+
+    Object.keys(form).forEach(key => formData.append(key, form[key]));
+
+    try {
+
+      const response = await fetch('/api/contact', {
+        method: 'post',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        console.log("falling over")
+        throw new Error(`response status: ${response.status}`);
+      }
+      const responseData = await response.json();
+      console.log(responseData['message'])
+
+      alert('Message successfully sent');
+
+      console.clear()
+    } catch (err) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
+    }
+  }
+
   return (
     <>
 
@@ -50,7 +80,7 @@ export default function Home() {
 
               {/* <div id="profiles"> */}
 
-                {/* <div className='personal' id="joseph">
+              {/* <div className='personal' id="joseph">
                   <div className='personal__info'>
                     <div className='personal__info__profil__picture'>
                       <Image src={'/assets/img/joseph.png'} width={76} height={76} alt='' />
@@ -305,7 +335,22 @@ export default function Home() {
             </div>
             <div className="col-md-5 form-container">
               <div className="shadow"></div>
-              <form className="form">
+              <form onSubmit={handleSubmit} className="form">
+                {/* <div
+                  className="progress mb-3"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    className="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated"
+                    style={{
+                      width: "50%"
+                    }}
+                  ></div>
+                </div> */}
                 <h3>Set up a meeting</h3>
                 <label htmlFor='name'>Full name</label>
                 <input
@@ -337,7 +382,10 @@ export default function Home() {
                     setForm(state => ({ ...state, phone: value }))
                   }}
                 />
-                <button type="submit" className="btn btn-primary">Book a meeting</button>
+                <button type="submit" className="btn btn-primary">
+                  Book a meeting
+
+                </button>
               </form>
             </div>
           </div>
@@ -351,7 +399,7 @@ export default function Home() {
           <div className="row">
             <div className="col-md-4 form-container">
 
-              <form className="form">
+              <form onSubmit={handleSubmit} className="form">
                 <h3>Set up a meeting</h3>
                 <label htmlFor='name'>Full name</label>
                 <input
@@ -477,7 +525,7 @@ export default function Home() {
             </div>
             <div className="col-md-5 form-container">
               <div className="shadow"></div>
-              <form className="form form--dark">
+              <form onSubmit={handleSubmit} className="form form--dark">
                 <h3>Set up a meeting</h3>
                 <label htmlFor='name'>Full name</label>
                 <input
@@ -525,7 +573,7 @@ export default function Home() {
           <div className="row">
             <div className="col-md-5 form-container">
               <div className="shadow"></div>
-              <form className="form form--dark">
+              <form onSubmit={handleSubmit} className="form form--dark">
                 <h3>Set up a meeting</h3>
                 <label htmlFor='name'>Full name</label>
                 <input
@@ -615,7 +663,7 @@ export default function Home() {
 
             <div className="col-md-5 form-container">
               <div className="shadow"></div>
-              <form className="form form--dark">
+              <form onSubmit={handleSubmit} className="form form--dark">
                 <h3>Set up a meeting</h3>
                 <label htmlFor='name'>Full name</label>
                 <input
