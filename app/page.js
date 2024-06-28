@@ -5,6 +5,7 @@ import Image from 'next/image'
 import PhoneInput from 'react-phone-number-input'
 
 import '../styles/landing-page.css'
+import Swal from "sweetalert2";
 
 const initialFormState = {
   email: '',
@@ -37,6 +38,8 @@ export default function Home() {
 
     Object.keys(form).forEach(key => formData.append(key, form[key]));
 
+    const loader = e.target.querySelector('.loader')
+
     try {
 
       const response = await fetch('/api/contact', {
@@ -51,13 +54,22 @@ export default function Home() {
       const responseData = await response.json();
       console.log(responseData['message'])
 
-      alert('Message successfully sent');
+      Swal.fire({
+        text: "Message successfully sent",
+        icon: "success"
+      });
 
-      console.clear()
+      e.target.reset()
     } catch (err) {
       console.error(err);
-      alert("Error, please try resubmitting the form");
+      Swal.fire({
+        text: "Error, please try resubmitting the form",
+        icon: "error"
+      });
     }
+
+    loader.style.display = 'none';
+
   }
 
   return (
@@ -336,21 +348,7 @@ export default function Home() {
             <div className="col-md-5 form-container">
               <div className="shadow"></div>
               <form onSubmit={handleSubmit} className="form">
-                {/* <div
-                  className="progress mb-3"
-                  role="progressbar"
-                  aria-label="Basic example"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  <div
-                    className="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated"
-                    style={{
-                      width: "50%"
-                    }}
-                  ></div>
-                </div> */}
+
                 <h3>Set up a meeting</h3>
                 <label htmlFor='name'>Full name</label>
                 <input
@@ -386,6 +384,7 @@ export default function Home() {
                   Book a meeting
 
                 </button>
+                <div className="loader"></div>
               </form>
             </div>
           </div>
@@ -432,6 +431,7 @@ export default function Home() {
                   }}
                 />
                 <button type="submit" className="btn btn-primary">Book a meeting</button>
+                <div className="loader"></div>
               </form>
             </div>
             <div className="col-md-8">
@@ -558,6 +558,7 @@ export default function Home() {
                   }}
                 />
                 <button type="submit" className="btn btn-primary">Book a meeting</button>
+                <div className="loader"></div>
               </form>
             </div>
           </div>
@@ -606,6 +607,7 @@ export default function Home() {
                   }}
                 />
                 <button type="submit" className="btn btn-primary">Book a meeting</button>
+                <div className="loader"></div>
               </form>
             </div>
             <div className="col-md-7">
@@ -696,6 +698,7 @@ export default function Home() {
                   }}
                 />
                 <button type="submit" className="btn btn-primary">Book a meeting</button>
+                <div className="loader"></div>
               </form>
             </div>
 
@@ -727,11 +730,11 @@ export default function Home() {
                   <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                 </svg>
               </a>
-              <a className="btn btn-outline mx-2">Start a free trial &nbsp;
+              {/* <a className="btn btn-outline mx-2">Start a free trial &nbsp;
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                   <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                 </svg>
-              </a>
+              </a> */}
             </div>
             <div className="col-md-6 position-relative">
               <div className="shadow"></div>
